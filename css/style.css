@@ -303,9 +303,32 @@ button {
     position: absolute;
     width: 98px;
     height: 98px;
+}
+
+.team__item-1 {
     right: 95px;
     top: 157px;
 }
+.team__item-2 {
+    left: 0;
+    top: 223px;
+}
+
+.team__item-3 {
+    bottom: 257px;
+    right: 0;
+
+}
+.team__item-4 {
+    left: 210px;
+    bottom: 223px;
+}
+
+.team__item-5 {
+    bottom: 135px;
+    right: 300px;
+}
+
 .team__item-img {
     width: 98px;
     height: 98px;
@@ -315,7 +338,6 @@ button {
 }
 
 .team__item-text {
-    display: inline-block;
     background-color: #fff;
     padding: 15px 24px;
     color: #2F281E;
@@ -324,5 +346,47 @@ button {
     position: absolute;
     top: -30px;
     right: 75px;
-    width: 288px;
+    white-space: nowrap; 
+}
+
+.team__item-text.team__item-text-left {
+    top: -41px;
+    left: 62px;
+    right: auto;
+}
+
+.team__item-text-right::after,
+.team__item-text-right::before,
+.team__item-text-left::before,
+.team__item-text-left::after {
+    content: '';
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.team__item-text-right::after,
+.team__item-text-left::after {
+    width: 17px;
+    height: 17px;
+    bottom: -7px;
+    right: 30px;
+}
+
+.team__item-text-right::before,
+.team__item-text-left::before {
+    width: 9px;
+    height: 9px;
+    bottom: -13px;
+    right: 9px;
+}
+
+.team__item-text-left::before {
+    left: 9px;
+    right: auto;
+}
+
+.team__item-text-left::after {
+    left: 30px; 
+    right: auto;
 }
