@@ -19,11 +19,10 @@ li, a, button {
     list-style: none;
     text-decoration: none;
     display: inline-block;
-    transition: ease-in 0.4s;
+    transition: ease-out 0.4s;
 }
 
 button {
-    outline: none;
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -84,9 +83,9 @@ button {
     color: #2F281E;
 }
 
-.menu__list-item a:hover {
+.menu__list-item a:hover, .slider__item-info a:hover,
+.slider__item-title:hover {
     color: #ff9900;
-    text-shadow: 1px 0px 25px #ff9900
 }
 .user-nav {
     margin: 0 13px 0 50px;
@@ -390,3 +389,72 @@ button {
     left: 30px; 
     right: auto;
 }
+
+/**** Slider ****/
+
+.blog {
+    padding: 30px 0 120px;
+}
+
+.blog__title {
+    font-size: 34px;
+    line-height: 51px;
+    margin-bottom: 9px;
+}
+
+.blog__text {
+    margin-bottom: 55px;
+}
+
+.slider {
+    margin: 0 -20px; 
+}
+
+.slider__item {
+    padding: 0 20px;
+}
+
+.slider__item-img {
+    width: 348px;
+    height: 185px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    margin-bottom: 25px;
+}
+
+.slider__item-info {
+    margin-bottom: 12px;
+    line-height: 28px;
+}
+
+.slider__item-info a {
+    color: #544837;
+}
+
+.slider__item-title {
+    font-size: 24px;
+    line-height: 34px;
+    display: inline-block;
+    margin-bottom: 84px;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center; 
+}
+
+.slick-dots button {
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    font-size: 0;
+    background-color: #efefef;
+    margin: 0 5px;
+}
+
+.slick-dots .slick-active button {
+    background-color: #ff9900;
+}
+
+/**** Footer ****/
