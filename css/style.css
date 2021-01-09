@@ -458,3 +458,58 @@ button {
 }
 
 /**** Footer ****/
+.footer__inner {
+    padding: 105px 0 100px;
+    border-top: 1px solid rgba(188, 208, 229, 0.496913);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__menu {
+   max-width: 135px;
+}
+
+.footer__menu-title, .footer__form-text {
+    font-size: 20px;
+    margin-bottom: 35px;
+    line-height: 30px;
+    color: #2F281E;
+    font-weight: 600;
+}
+
+.footer__list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer__menu-item a {
+    font-size: 16px;
+    line-height: 35px;
+    color: #544837;
+}
+
+.footer__form {
+    max-width: 330px;
+}
+
+.footer__form input {
+    display: inline-block;
+    height: 48px;
+    width: 100%;
+    padding: 0 15px;
+    margin-bottom: 21px;
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    
+}
+
+.footer__form input::placeholder {
+    font-size: 16px;
+    color: #BCD0E5;
+    line-height: 28px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.footer__form-btn {
+    padding: 8px 15px 7px;
+}
